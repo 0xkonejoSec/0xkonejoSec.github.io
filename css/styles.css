@@ -1,24 +1,50 @@
+/* Estilo Hacker + Matrix */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Courier New", monospace;
     text-align: center;
     padding: 50px;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #000; /* Fondo negro */
+    color: #00ff00; /* Texto verde neón */
 }
 
-h1 {
-    color: #ff6600;
-}
-
-a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
+/* Contenedor principal */
 .container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: rgba(0, 0, 0, 0.8); /* Caja con transparencia */
+    border: 2px solid #00ff00; /* Borde verde */
     border-radius: 10px;
+}
+
+/* Títulos */
+h1 {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00; /* Brillo verde */
+}
+
+/* Enlaces */
+a {
+    color: #ff0000; /* Rojo para destacar */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* Cursor parpadeante */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #00ff00;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }

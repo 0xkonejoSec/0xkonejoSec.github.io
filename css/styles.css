@@ -48,3 +48,17 @@ a:hover {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+.titulo {
+    position: absolute;
+    top: 20px; /* Ajusta según lo necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00ff00; /* Cambia el color si quieres */
+    text-shadow: 0 0 10px #00ff00;
+    font-size: 2em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
